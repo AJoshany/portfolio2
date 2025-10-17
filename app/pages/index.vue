@@ -1,11 +1,9 @@
 <template>
   <div>
-    <IntroSecVue class="pt-[10rem]" />
+    <HeaderIntroSecVue class="pt-[10rem]" />
   </div>
 </template>
 
-<script lang="ts" setup>
-import IntroSecVue from "~/components/header/IntroSec.vue.vue";
-</script>
+<script lang="ts" setup></script>
 
 <style></style>

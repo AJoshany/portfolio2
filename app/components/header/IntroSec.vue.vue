@@ -18,7 +18,7 @@
           using modern technologies such as Tailwind, Material UI, and SCSS.
         </p>
         <button
-          class="px-[4.5rem] py-[1.1rem] text-white bg-[--color-orange-500] rounded-[--radius-xsm] hover:bg-[--color-orange-200] transition-all"
+          class="px-[4.5rem] py-[1rem] text-white bg-[--color-orange-500] rounded-[--radius-xsm] hover:bg-[--color-orange-200] transition-all"
         >
           Hire Me
         </button>
@@ -32,9 +32,18 @@
           <img src="~/assets/img/avatar.png" alt="avatar" />
         </div>
         <div class="intro__socials flex gap-[2rem]">
-          <LinkedinIcon class="icon !w-[2.5rem] !h-[2.5rem]" />
-          <GithubIcon class="icon !w-[2.5rem] !h-[2.5rem]" />
-          <InstagramIcon class="icon !w-[2.5rem] !h-[2.5rem]" />
+          <NuxtLink
+            to="https://www.linkedin.com/in/ali-joshany/"
+            target="_blank"
+          >
+            <LinkedinIcon class="icon" />
+          </NuxtLink>
+          <NuxtLink to="https://github.com/AJoshany" target="_blank">
+            <GithubIcon class="icon" />
+          </NuxtLink>
+          <NuxtLink to="https://www.instagram.com/ali.joshany/" target="_blank">
+            <InstagramIcon class="icon" />
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -50,6 +59,8 @@ import GithubIcon from "~/assets/icons/github-icon.svg";
 <style>
 .icon {
   transition: all 0.3s ease;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
   cursor: pointer;
 }
 .icon:hover {

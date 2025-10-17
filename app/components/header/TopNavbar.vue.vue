@@ -12,7 +12,7 @@
     <i class="pi pi-align-right text-[2rem]" @click="showMobileMenu = true"></i>
 
     <nav
-      class="top-nav flex items-center gap-[1.2rem] text-[--color-black-500] hidden md:flex transition-right duration-300"
+      class="top-nav flex items-center gap-[1.2rem] text-[--color-black-500] hidden md:flex transition-right duration-300 z-[101]"
       :class="{ 'show-menu': showMobileMenu }"
     >
       <li
@@ -44,6 +44,7 @@ const showMobileMenu = ref(false);
   inset: 0;
   background-color: var(--color-black-300);
   opacity: 70%;
+  z-index: 100;
 }
 
 .show-menu {

@@ -1,7 +1,7 @@
 <template>
-  <main>
+  <main class="flex flex-col items-center">
     <nuxt-layout>
-      <nuxt-page/>
+      <nuxt-page />
     </nuxt-layout>
   </main>
 </template>

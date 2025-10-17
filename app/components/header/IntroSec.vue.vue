@@ -56,7 +56,7 @@ import InstagramIcon from "~/assets/icons/instagram-icon.svg";
 import GithubIcon from "~/assets/icons/github-icon.svg";
 </script>
 
-<style>
+<style lang="scss" scoped>
 .icon {
   transition: all 0.3s ease;
   width: 2.5rem !important;
@@ -70,8 +70,15 @@ import GithubIcon from "~/assets/icons/github-icon.svg";
 .avatar {
   box-shadow: inset 0 0 100px 30px var(--color-orange-300);
   transition: all 0.3s ease;
+  img {
+    transition: filter 0.3s ease;
+    filter: grayscale(0);
+  }
 }
 .avatar:hover {
   box-shadow: inset 0 0 30px 10px var(--color-orange-300);
+  img {
+    filter: grayscale(50%);
+  }
 }
 </style>

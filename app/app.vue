@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <p>asdfadfasdfasf</p>
-  </div>
+  <main>
+    <nuxt-layout>
+      <nuxt-page/>
+    </nuxt-layout>
+  </main>
 </template>
 
-<style lang="scss">
-p{
-  color: $color-yellow;
-}
-</style>
+<style lang="scss"></style>

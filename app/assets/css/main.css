@@ -10,6 +10,39 @@
   list-style: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+/*Variables */
+
+:root {
+  --color-orange-50: #ffefe6;
+  --color-orange-100: #ffcfb0;
+  --color-orange-200: #ffb78a;
+  --color-orange-300: #ff9654;
+  --color-orange-400: #ff8233;
+  --color-orange-500: #ff6300;
+  --color-orange-600: #e85a00;
+  --color-orange-700: #b54600;
+  --color-orange-800: #8c3600;
+  --color-orange-900: #6b2a00;
+
+  --color-black-50: #e6e6e6;
+  --color-black-100: #b0b0b0;
+  --color-black-200: #8a8a8a;
+  --color-black-300: #545454;
+  --color-black-400: #333333;
+  --color-black-500: #000000;
+
+  --radius-xsm: 0.5rem;
+  --radius-sm: 0.8rem;
+  --radius-md: 1.2rem;
+  --radius-lg: 1.4rem;
+  --rounded: 50%;
 }

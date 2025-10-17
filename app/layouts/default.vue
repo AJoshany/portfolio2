@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-4 py-5 md:px-3 md:py-[4rem]">
+  <div class="container px-[3rem] py-8 md:px-3 md:py-[4rem]">
     <HeaderTopNavbarVue />
     <slot></slot>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex flex-col gap-[0.8rem]">
+  <div class="w-full flex flex-col gap-[1rem]">
     <p class="text-[1.9rem] font-[600] text-[--color-black-500]">{{ labal }}</p>
     <div
       class="progress flex items-center w-full h-[1.2rem] relative rounded-[0.6rem] bg-[#EDECEC]"

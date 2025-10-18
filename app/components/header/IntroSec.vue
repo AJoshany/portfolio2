@@ -35,13 +35,22 @@
           <NuxtLink
             to="https://www.linkedin.com/in/ali-joshany/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <LinkedinIcon class="icon" />
           </NuxtLink>
-          <NuxtLink to="https://github.com/AJoshany" target="_blank">
+          <NuxtLink
+            to="https://github.com/AJoshany"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <GithubIcon class="icon" />
           </NuxtLink>
-          <NuxtLink to="https://www.instagram.com/ali.joshany/" target="_blank">
+          <NuxtLink
+            to="https://www.instagram.com/ali.joshany/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <InstagramIcon class="icon" />
           </NuxtLink>
         </div>

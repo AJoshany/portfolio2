@@ -24,7 +24,7 @@ defineProps({
 .icon1 {
   max-width: 120px;
   max-height: 120px;
-  filter: grayscale(0);
+  
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 768px) {
@@ -39,7 +39,7 @@ defineProps({
   &:hover {
     transform: translateY(-8px);
     .icon1 {
-      filter: grayscale(100%);
+      filter:hue-rotate(100deg);
     }
   }
 }

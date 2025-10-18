@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col gap-[6rem]">
-    <HeaderIntroSec class="pt-[5rem] lg:pt-[10rem]" />
-    <AboutMe />
-    <SkillsViewer />
-    <ProjectsViewer/>
+  <div class="flex flex-col ">
+    <HeaderIntroSec class="pt-[2rem] lg:pt-[10rem]" />
+    <AboutMe  id="about" class="pt-[7rem]" />
+    <SkillsViewer id="skills" class="pt-[7rem]" />
+    <ProjectsViewer class="pt-[7rem]"/>
   </div>
 </template>
 

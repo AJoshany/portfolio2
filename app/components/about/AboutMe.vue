@@ -1,6 +1,7 @@
 <template>
   <section
     class="w-full grid md:grid-cols-2 gap-[8rem] justify-items-center items-center"
+   
   >
     <div class="about__content flex flex-col gap-[1.5rem]">
       <h2 class="text-[5.2rem] font-[600]">About Me</h2>

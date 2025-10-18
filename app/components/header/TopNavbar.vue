@@ -1,5 +1,5 @@
 <template>
-  <div class="text-[1.7rem] md:text-[1.4rem] flex justify-between items-center">
+  <div class="text-[1.7rem] md:text-[1.4rem] flex justify-between items-center sticky top-0 bg-white py-8 z-[1000] ">
     <p class="text-[--color-orange-500] font-[600] text-[1.9rem]">
       Ali Joshany
     </p>
@@ -21,7 +21,9 @@
         :key="index"
         class="px-[1rem] py-[0.8rem] cursor-pointer hover:text-[--color-orange-500] transition-all duration-300"
       >
-        {{ item }}
+        <nuxt-link :to="item.route" @click="showMobileMenu=false">
+          {{ item.title }}
+        </nuxt-link>
       </li>
       <nuxt-link to="/Resume.pdf"  rel="noopener noreferrer" target="_blank" external>
         <li
@@ -35,14 +37,20 @@
 </template>
 
 <script setup>
-const navItemList = ["Home", "About Me", "Skills", "Projects", "Contact"];
+const navItemList = [
+{title:'Home',route:'/'} , 
+{title:'About Me',route:'/#about'} , 
+{title:'Skills',route:'/#skills'} , 
+{title:'Projects',route:'/projects'} , 
+{title:'Contact',route:'/#contact'} , 
+];
 
 const showMobileMenu = ref(false);
 </script>
 
 <style scoped lang="scss">
 .oerlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: var(--color-black-300);
   opacity: 70%;
@@ -50,7 +58,7 @@ const showMobileMenu = ref(false);
 }
 
 .show-menu {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   top: 0;

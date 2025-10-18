@@ -17,9 +17,9 @@
       </div>
     </div>
     <div
-      class="avatar max-w-[520px] border-[3px] border-[--color-orange-500] rounded-[--rounded] order-last md:order-first md:justify-self-start"
+      class="avatar max-w-[520px] border-[3px] border-[--color-orange-500] rounded-[--rounded] order-last md:order-first md:justify-self-start overflow-hidden"
     >
-      <img src="~/assets/img/avatar.png" alt="avatar" />
+      <img src="~/assets/img/avatar2.png" alt="avatar" />
     </div>
   </section>
 </template>

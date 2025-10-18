@@ -27,7 +27,7 @@
         class="intro__img-sec flex flex-col items-center gap-[3rem] lg:justify-self-end"
       >
         <div
-          class="avatar max-w-[520px] border-[3px] border-[--color-orange-500] rounded-[--rounded]"
+          class="avatar max-w-[500px] border-[3px] border-[--color-orange-500] rounded-[--rounded]"
         >
           <img src="~/assets/img/avatar.png" alt="avatar" />
         </div>
@@ -79,6 +79,7 @@ import GithubIcon from "~/assets/icons/github-icon.svg";
 .avatar {
   box-shadow: inset 0 0 100px 30px var(--color-orange-300);
   transition: all 0.3s ease;
+  
   img {
     transition: filter 0.3s ease;
     filter: grayscale(0);

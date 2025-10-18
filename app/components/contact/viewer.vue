@@ -1,5 +1,7 @@
 <template>
-  <section class="flex flex-col items-center gap-[8rem] text-[1.7rem]">
+  <section
+    class="flex flex-col items-center gap-[4rem] md:gap-[8rem] text-[1.4rem] md:text-[1.7rem]"
+  >
     <div class="text-center md:max-w-[70%] flex flex-col gap-[1.5rem]">
       <h2 class="text-[5.2rem] font-[600]">Let’s Stay in Touch</h2>
       <p class="text-[1.7rem]">
@@ -9,18 +11,19 @@
     </div>
     <form
       @submit.prevent="handleSubmit"
-      class="flex items-center justify-center gap-[2rem] w-full"
+      class="flex flex-col md:flex-row items-center justify-center gap-[2rem] w-full"
     >
       <input
         type="email"
         v-model="email"
         placeholder="Enter Your Email"
-        class="w-[50rem] bg-[#F8F8F8] border-[1px] border-[#AFAFAF] text-[#797979] rounded-[--radius-lg] h-[6rem] px-[2rem]"
+        class="w-[100%] md:w-[50rem] bg-[#F8F8F8] border-[1px] border-[#AFAFAF] text-[#797979] rounded-[--radius-lg] h-[6rem] px-[2rem]"
       />
       <button
         type="submit"
-        class="h-[6rem] px-[3rem] text-white bg-[--color-orange-500] rounded-[--radius-lg] hover:bg-[--color-orange-200] transition-all"
+        class="flex items-center justify-center gap-[1rem] relative min-w-[18rem] h-[6rem] text-white bg-[--color-orange-500] rounded-[--radius-lg] hover:bg-[--color-orange-200] transition-all"
       >
+        <div v-if="showSpiner" class="spinner"></div>
         Contact Me
       </button>
     </form>
@@ -31,14 +34,33 @@
 const email = ref("");
 const mail = useMail();
 
+const showSpiner = ref(false);
+
 const handleSubmit = async () => {
+  showSpiner.value = true;
   await mail.send({
-    from: "John Doe",
-    subject: "Incredible",
+    subject: "Portfolio",
     text: email.value,
   });
-  alert("Successfuly");
+  showSpiner.value = false;
+  alert("Successfull");
+  email.value = "";
 };
 </script>
 
-<style></style>
+<style>
+.spinner {
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--color-orange-500);
+  border-top-color: white;
+  border-radius: 100%;
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>

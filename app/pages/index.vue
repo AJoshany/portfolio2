@@ -3,6 +3,7 @@
     <HeaderIntroSec class="pt-[5rem] lg:pt-[10rem]" />
     <AboutMe />
     <SkillsViewer />
+    <ProjectsViewer/>
   </div>
 </template>
 

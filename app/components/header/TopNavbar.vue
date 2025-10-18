@@ -23,11 +23,13 @@
       >
         {{ item }}
       </li>
-      <li
-        class="px-[1.4rem] py-[0.8rem] bg-[--color-orange-500] text-white rounded-[--radius-xsm] hover:bg-[--color-orange-300] cursor-pointer transition-all duration-300"
-      >
-        Download CV
-      </li>
+      <nuxt-link to="/Resume.pdf" target="_blank" external>
+        <li
+          class="px-[1.4rem] py-[0.8rem] bg-[--color-orange-500] text-white rounded-[--radius-xsm] hover:bg-[--color-orange-300] cursor-pointer transition-all duration-300"
+        >
+          Download CV
+        </li>
+      </nuxt-link>
     </nav>
   </div>
 </template>

@@ -10,9 +10,9 @@
         Tailwind, Material UI, and SCSS.
       </p>
       <div class="flex flex-col gap-[1.5rem]">
-        <AboutProgressBar labal="JavaScript" :level="60" />
-        <AboutProgressBar labal="Vue Js" :level="55" />
-        <AboutProgressBar labal="React Js" :level="50" />
+        <AboutProgressBar labal="JavaScript" :level="80" />
+        <AboutProgressBar labal="React Js" :level="70" />
+        <AboutProgressBar labal="Vue Js" :level="60" />
         <AboutProgressBar labal="Nuxt Js" :level="30" />
       </div>
     </div>

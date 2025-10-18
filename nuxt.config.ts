@@ -5,7 +5,20 @@ export default defineNuxtConfig({
    app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
-  modules: ['@nuxtjs/tailwindcss' , 'nuxt-svgo'],
+  modules: ['@nuxtjs/tailwindcss' , 'nuxt-svgo',['nuxt-mail', {
+      message: {
+        to: 'aa6joshany@gmail.com',
+      },
+      smtp: {
+        service: 'gmail',
+          host: 'smtp.gmail.com',
+          port: 587,
+          auth: {
+            user: 'aaa6joshany@gmail.com',
+            pass: 'lvpd bzam ssjy fxhx',
+          },
+      },
+    }],],
   css: ['~/assets/css/main.css'],
 
   vite: {

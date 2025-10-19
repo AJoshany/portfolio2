@@ -17,11 +17,11 @@
           Passionate about creating responsive, user-friendly web interfaces
           using modern technologies such as Tailwind, Material UI, and SCSS.
         </p>
-        <button
+        <NuxtLink to="/#contact"
           class="px-[4.5rem] py-[1rem] text-white bg-[--color-orange-500] rounded-[--radius-xsm] hover:bg-[--color-orange-200] transition-all"
         >
-          Hire Me
-        </button>
+          Contact Me
+        </NuxtLink>
       </div>
       <div
         class="intro__img-sec flex flex-col items-center gap-[3rem] lg:justify-self-end"

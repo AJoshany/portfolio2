@@ -18,6 +18,7 @@
         v-model="email"
         placeholder="Enter Your Email"
         class="w-[100%] md:w-[50rem] bg-[#F8F8F8] border-[1px] border-[#AFAFAF] text-[#797979] rounded-[--radius-lg] h-[6rem] px-[2rem]"
+        required
       />
       <button
         type="submit"

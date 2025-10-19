@@ -3,8 +3,7 @@
     <div class="text-center md:max-w-[70%] flex flex-col gap-[1.5rem]">
       <h2 class="text-[5.2rem] font-[600]">My Projects</h2>
       <p class="text-[1.7rem]">
-        These are some of the tools in my developer’s toolbox. To see everything
-        I’ve been sharpening, take a look at my full resume.
+        These are a few of the projects I’ve crafted along my development journey. To discover more of what I’ve been building, check out my resume.
       </p>
     </div>
     <div

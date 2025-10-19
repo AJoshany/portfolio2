@@ -3,11 +3,12 @@ import 'aos/dist/aos.css'
 
 export default defineNuxtPlugin(() => {
   if (process.client) {
+    const isMobile = window.innerWidth < 768
     AOS.init({
-      duration: 800, 
+      duration: isMobile ? 400 : 800,
       once: true,    
       easing: 'ease-out',
-      offset: 100,  
+      offset: isMobile ? 50 : 120,
     })
   }
 })

@@ -7,7 +7,9 @@
         I’ve been sharpening, take a look at my full resume.
       </p>
     </div>
-    <div class="w-full flex gap-[3.5rem] items-center justify-between">
+    <div
+      class="w-full flex flex-col md:flex-row gap-[4rem] md:gap-[3.5rem] items-center justify-between"
+    >
       <ProjectsSingle
         v-for="(item, index) in projects"
         :key="index"
@@ -18,7 +20,7 @@
     </div>
     <NuxtLink
       to="/projects"
-      class="text-[1.4rem] text-[--color-orange-500] self-end hover:text-[--color-orange-200] transition-all"
+      class="text-[1.4rem] text-[--color-orange-500] self-end hover:text-[--color-orange-200] transition-all mt-[-2rem] md:mt-0"
       >Show more...</NuxtLink
     >
   </section>

@@ -16,6 +16,7 @@
         :title="item.title"
         :category="item.category"
         :img-src="item.imgSrc"
+        :id="item.id"
       />
     </div>
     <NuxtLink
@@ -33,16 +34,19 @@ const projects = [
   {
     title: "Personal Portfolio",
     category: "Nuxt Js",
+    id:'portfolio',
     imgSrc: partBankImg,
   },
   {
     title: "Part Bank",
     category: "Vue Js",
+    id:'part-bank',
     imgSrc: partBankImg,
   },
   {
     title: "Real Estate",
     category: "Vue Js",
+    id:'real-estate',
     imgSrc: realEstateImg,
   },
 ];

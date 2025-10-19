@@ -24,7 +24,7 @@
       </nav>
       <SocialIcons />
     </div>
-    <div class="text-white bg-[--color-black-300] py-[2rem] w-full text-center">
+    <div class="text-white bg-[--color-black-300] py-[2rem] text-[1.2rem] md:text-[1.7rem] w-full text-center">
       © 2025 <span class="text-[--color-orange-500]">Ali Joshany</span> All
       Rights Reserved , Inc.
     </div>

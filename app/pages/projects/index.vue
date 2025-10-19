@@ -3,7 +3,7 @@
     <h2 class="text-[5.2rem] font-[600] text-center">Projects</h2>
     <div class="flex flex-col gap-[10rem] md:gap-[0]">
       <!-- Part Bank -->
-      <div class="project flex flex-col md:flex-row md:gap-[4rem]">
+      <div class="project flex flex-col md:flex-row md:gap-[4rem]"  data-aos="fade-left">
         <img
           src="~/assets/img/part-bank.webp"
           alt="part-bank"
@@ -40,7 +40,7 @@
       </div>
 
       <!-- Real Estate -->
-      <div class="project flex flex-col-reverse md:flex-row md:gap-[4rem]">
+      <div class="project flex flex-col-reverse md:flex-row md:gap-[4rem]" data-aos="fade-right">
         <div class="content flex flex-col gap-[2rem] pt-[1rem] md:pt-[4rem]">
           <h3 class="text-[3rem] font-[600]">Real Estate</h3>
           <p>
@@ -97,7 +97,7 @@
 
       <!-- Finance Dashboard -->
 
-      <div class="project flex flex-col md:flex-row md:gap-[4rem]">
+      <div class="project flex flex-col md:flex-row md:gap-[4rem]" data-aos="fade-left">
         <img
           src="~/assets/img/finance-dashboard.webp"
           alt="part-bank"

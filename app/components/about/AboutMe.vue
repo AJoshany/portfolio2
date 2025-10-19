@@ -1,7 +1,6 @@
 <template>
   <section
     class="w-full grid md:grid-cols-2 gap-[8rem] justify-items-center items-center"
-   
   >
     <div class="about__content flex flex-col gap-[1.5rem]">
       <h2 class="text-[5.2rem] font-[600]">About Me</h2>
@@ -20,7 +19,7 @@
     <div
       class="avatar max-w-[520px] border-[3px] border-[--color-orange-500] rounded-[--rounded] order-last md:order-first md:justify-self-start overflow-hidden"
     >
-      <img src="~/assets/img/avatar2.png" alt="avatar" />
+      <img src="~/assets/img/avatar2.webp" alt="avatar" />
     </div>
   </section>
 </template>

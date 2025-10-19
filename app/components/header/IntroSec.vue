@@ -29,25 +29,21 @@
         <div
           class="avatar max-w-[500px] border-[3px] border-[--color-orange-500] rounded-[--rounded]"
         >
-          <img src="~/assets/img/avatar.png" alt="avatar" />
+          <img src="~/assets/img/avatar.webp" alt="avatar" />
         </div>
-        <SocialIcons/>
+        <SocialIcons />
       </div>
     </div>
   </section>
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <style lang="scss">
-
-
 .avatar {
   box-shadow: inset 0 0 100px 30px var(--color-orange-300);
   transition: all 0.3s ease;
-  
+
   img {
     transition: filter 0.3s ease;
     filter: grayscale(0);

@@ -27,8 +27,8 @@
 </template>
 
 <script setup>
-import partBankImg from "~/assets/img/part-bank.png";
-import realEstateImg from "~/assets/img/real-estate.png";
+import partBankImg from "~/assets/img/part-bank.webp";
+import realEstateImg from "~/assets/img/real-estate.webp";
 const projects = [
   {
     title: "Personal Portfolio",

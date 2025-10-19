@@ -21,6 +21,7 @@
       />
       <button
         type="submit"
+        :disabled="disalbleBtn"
         class="flex items-center justify-center gap-[1rem] relative min-w-[18rem] h-[6rem] text-white bg-[--color-orange-500] rounded-[--radius-lg] hover:bg-[--color-orange-200] transition-all"
       >
         <div v-if="showSpiner" class="spinner"></div>
@@ -32,19 +33,35 @@
 
 <script setup>
 const email = ref("");
-const mail = useMail();
-
 const showSpiner = ref(false);
+const disalbleBtn = ref(false);
+const mail = useMail();
+const toast = useToast();
 
 const handleSubmit = async () => {
   showSpiner.value = true;
-  await mail.send({
-    subject: "Portfolio",
-    text: email.value,
-  });
-  showSpiner.value = false;
-  alert("Successfull");
-  email.value = "";
+  disalbleBtn.value = true;
+  try {
+    await mail.send({
+      subject: "Portfolio",
+      text: email.value,
+    });
+    toast.success({
+      title: "Success",
+      message: "Your Email was sent successfully.",
+      position: "bottomRight",
+    });
+  } catch (error) {
+    toast.error({
+      title: "Error",
+      message: "Something went wrong.",
+      position: "bottomRight",
+    });
+  } finally {
+    disalbleBtn.value = false;
+    showSpiner.value = false;
+    email.value = "";
+  }
 };
 </script>
 

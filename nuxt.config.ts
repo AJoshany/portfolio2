@@ -5,7 +5,8 @@ export default defineNuxtConfig({
    app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
-  modules: ['@nuxtjs/tailwindcss' , 'nuxt-svgo',['nuxt-mail', {
+  modules: ['@nuxtjs/tailwindcss' , 'nuxt-svgo','nuxt-toast'
+  ,['nuxt-mail', {
       message: {
         to: 'aa6joshany@gmail.com',
       },

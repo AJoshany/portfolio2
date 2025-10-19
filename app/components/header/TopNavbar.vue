@@ -1,5 +1,7 @@
 <template>
-  <div class="text-[1.7rem] md:text-[1.4rem] flex justify-between items-center sticky top-0 bg-white py-8 z-[1000] ">
+  <div
+    class="text-[1.7rem] md:text-[1.4rem] flex justify-between items-center sticky top-0 bg-white py-8 z-[1000]"
+  >
     <p class="text-[--color-orange-500] font-[600] text-[1.9rem]">
       Ali Joshany
     </p>
@@ -15,17 +17,24 @@
       class="top-nav flex items-center gap-[1.2rem] text-[--color-black-500] hidden md:flex transition-right duration-300 z-[101]"
       :class="{ 'show-menu': showMobileMenu }"
     >
-      <li
+      <nuxt-link
         v-for="(item, index) in navItemList"
         ,
         :key="index"
         class="px-[1rem] py-[0.8rem] cursor-pointer hover:text-[--color-orange-500] transition-all duration-300"
+        :to="item.route"
+        @click="showMobileMenu = false"
       >
-        <nuxt-link :to="item.route" @click="showMobileMenu=false">
+        <li>
           {{ item.title }}
-        </nuxt-link>
-      </li>
-      <nuxt-link to="/Resume.pdf"  rel="noopener noreferrer" target="_blank" external>
+        </li>
+      </nuxt-link>
+      <nuxt-link
+        to="/Resume.pdf"
+        rel="noopener noreferrer"
+        target="_blank"
+        external
+      >
         <li
           class="px-[1.4rem] py-[0.8rem] bg-[--color-orange-500] text-white rounded-[--radius-xsm] hover:bg-[--color-orange-300] cursor-pointer transition-all duration-300"
         >
@@ -38,11 +47,11 @@
 
 <script setup>
 const navItemList = [
-{title:'Home',route:'/'} , 
-{title:'About Me',route:'/#about'} , 
-{title:'Skills',route:'/#skills'} , 
-{title:'Projects',route:'/projects'} , 
-{title:'Contact',route:'/#contact'} , 
+  { title: "Home", route: "/" },
+  { title: "About Me", route: "/#about" },
+  { title: "Skills", route: "/#skills" },
+  { title: "Projects", route: "/projects" },
+  { title: "Contact", route: "/#contact" },
 ];
 
 const showMobileMenu = ref(false);

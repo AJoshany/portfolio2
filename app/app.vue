@@ -6,6 +6,14 @@
   </main>
 </template>
 
+<script setup>
+onMounted(() => {
+  window.addEventListener('load', () => {
+    AOS.refresh()
+  })
+})
+</script>
+
 <style lang="scss">
 .page-enter-active,
 .page-leave-active {

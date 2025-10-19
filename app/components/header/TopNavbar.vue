@@ -1,10 +1,13 @@
 <template>
   <div
-    class="text-[1.7rem] md:text-[1.4rem] flex justify-between items-center sticky top-0 bg-white py-8 z-[1000]"
+    class="text-[1.7rem] md:text-[1.4rem] flex justify-between items-center sticky top-0 bg-white py-8 z-[100000000]"
   >
-    <p class="text-[--color-orange-500] font-[600] text-[1.9rem]">
+    <nuxt-link to="/">
+     <p class="text-[--color-orange-500] font-[600] text-[1.9rem]">
       Ali Joshany
-    </p>
+      </p>
+    </nuxt-link>
+    
 
     <div
       v-if="showMobileMenu"

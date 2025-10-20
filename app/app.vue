@@ -17,6 +17,17 @@ useHead({
   title: "Ali Joshany - Front-End Developer",
   titleTemplate: "%s - Ali Joshany",
   meta: [
+    { charset: "utf-8" },
+    { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+    { name: "robots", content: "index, follow" },
+    { name: "author", content: "Ali Joshany" },
+    {
+      name: "description",
+      content:
+        "I'm Ali Joshany, a Front-End Developer passionate about crafting responsive, user-friendly web interfaces using Vue, Nuxt, React, and modern UI frameworks like Tailwind CSS.",
+    },
+
+    // Open Graph
     { property: "og:site_name", content: "Ali Joshany Portfolio" },
     { property: "og:title", content: "Ali Joshany - Front-End Developer" },
     { property: "og:type", content: "website" },

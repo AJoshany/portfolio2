@@ -2,14 +2,20 @@
   <section class="pt-[3rem] text-[1.7rem] flex flex-col gap-[5rem]">
     <h2 class="text-[5.2rem] font-[600] text-center">Projects</h2>
     <div class="flex flex-col gap-[10rem] md:gap-[0]">
-
       <!-- Portfolio -->
 
-      <div class="project flex flex-col-reverse md:flex-row md:gap-[4rem]" id="portfolio" data-aos="fade-right">
+      <div
+        class="project flex flex-col-reverse md:flex-row md:gap-[4rem]"
+        id="portfolio"
+        data-aos="fade-right"
+      >
         <div class="content flex flex-col gap-[2rem] pt-[1rem] md:pt-[3rem]">
           <h3 class="text-[3rem] font-[600]">Portfolio</h3>
           <p>
-           A personal portfolio website built with Nuxt.js, showcasing my projects, skills, and experience. It features a clean, responsive design and smooth navigation, designed to highlight my work effectively.
+            A personal portfolio website built with Nuxt.js, showcasing my
+            projects, skills, and experience. It features a clean, responsive
+            design and smooth navigation, designed to highlight my work
+            effectively.
           </p>
           <div class="flex flex-col gap-[1rem] pt-[3rem]">
             <div class="info">
@@ -47,14 +53,18 @@
           </div>
         </div>
         <img
-          src="~/assets/img/real-estate.webp"
+          src="~/assets/img/portfolio.webp"
           alt="part-bank"
           class="max-w-[100%] md:max-w-[50%] rounded-[--radius-lg]"
         />
       </div>
 
       <!-- Part Bank -->
-      <div class="project flex flex-col md:flex-row md:gap-[4rem]" id="part-bank"  data-aos="fade-left">
+      <div
+        class="project flex flex-col md:flex-row md:gap-[4rem]"
+        id="part-bank"
+        data-aos="fade-left"
+      >
         <img
           src="~/assets/img/part-bank.webp"
           alt="part-bank"
@@ -91,7 +101,11 @@
       </div>
 
       <!-- Real Estate -->
-      <div class="project flex flex-col-reverse md:flex-row md:gap-[4rem]" id="real-estate" data-aos="fade-right">
+      <div
+        class="project flex flex-col-reverse md:flex-row md:gap-[4rem]"
+        id="real-estate"
+        data-aos="fade-right"
+      >
         <div class="content flex flex-col gap-[2rem] pt-[1rem] md:pt-[4rem]">
           <h3 class="text-[3rem] font-[600]">Real Estate</h3>
           <p>
@@ -148,7 +162,11 @@
 
       <!-- Finance Dashboard -->
 
-      <div class="project flex flex-col md:flex-row md:gap-[4rem]" id="finance-dashborad" data-aos="fade-left">
+      <div
+        class="project flex flex-col md:flex-row md:gap-[4rem]"
+        id="finance-dashborad"
+        data-aos="fade-left"
+      >
         <img
           src="~/assets/img/finance-dashboard.webp"
           alt="part-bank"
@@ -157,7 +175,11 @@
         <div class="content flex flex-col gap-[2rem] pt-[1rem] md:pt-[4rem]">
           <h3 class="text-[3rem] font-[600]">Finance Dashboard</h3>
           <p>
-            The Financial Dashboard Project allows users to easily record and manage their transactions. It automatically analyzes income and expenses, providing clear insights through interactive charts and summaries that help users understand their spending habits and make smarter financial decisions.
+            The Financial Dashboard Project allows users to easily record and
+            manage their transactions. It automatically analyzes income and
+            expenses, providing clear insights through interactive charts and
+            summaries that help users understand their spending habits and make
+            smarter financial decisions.
           </p>
           <div class="flex flex-col gap-[1rem] pt-[3rem]">
             <div class="info">
@@ -203,11 +225,17 @@
 
       <!-- Booking App -->
 
-       <div class="project flex flex-col-reverse md:flex-row md:gap-[4rem]" id="booking" data-aos="fade-right">
+      <div
+        class="project flex flex-col-reverse md:flex-row md:gap-[4rem]"
+        id="booking"
+        data-aos="fade-right"
+      >
         <div class="content flex flex-col gap-[2rem] pt-[1rem] md:pt-[3rem]">
           <h3 class="text-[3rem] font-[600]">Booking App</h3>
           <p>
-            A simple appointment booking website for doctors, allowing patients to schedule and manage their appointments easily. Built with a focus on clean design and user-friendly navigation.
+            A simple appointment booking website for doctors, allowing patients
+            to schedule and manage their appointments easily. Built with a focus
+            on clean design and user-friendly navigation.
           </p>
           <div class="flex flex-col gap-[1rem] pt-[3rem]">
             <div class="info">
@@ -245,7 +273,7 @@
           </div>
         </div>
         <img
-          src="~/assets/img/real-estate.webp"
+          src="~/assets/img/booking.webp"
           alt="part-bank"
           class="max-w-[100%] md:max-w-[50%] rounded-[--radius-lg]"
         />
@@ -253,16 +281,24 @@
 
       <!-- Dashboard Admin -->
 
-      <div class="project flex flex-col md:flex-row md:gap-[4rem]" id="dashboard" data-aos="fade-left">
+      <div
+        class="project flex flex-col md:flex-row md:gap-[4rem]"
+        id="dashboard"
+        data-aos="fade-left"
+      >
         <img
-          src="~/assets/img/finance-dashboard.webp"
+          src="~/assets/img/dashboard.webp"
           alt="part-bank"
           class="max-w-[100%] md:max-w-[50%] rounded-[--radius-lg]"
         />
         <div class="content flex flex-col gap-[2rem] pt-[1rem] md:pt-[4rem]">
           <h3 class="text-[3rem] font-[600]">Dashboard Admin</h3>
           <p>
-            The Financial Dashboard Project allows users to easily record and manage their transactions. It automatically analyzes income and expenses, providing clear insights through interactive charts and summaries that help users understand their spending habits and make smarter financial decisions.
+            The Financial Dashboard Project allows users to easily record and
+            manage their transactions. It automatically analyzes income and
+            expenses, providing clear insights through interactive charts and
+            summaries that help users understand their spending habits and make
+            smarter financial decisions.
           </p>
           <div class="flex flex-col gap-[1rem] pt-[3rem]">
             <div class="info">
@@ -301,8 +337,6 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </section>
 </template>

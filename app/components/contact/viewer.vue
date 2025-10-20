@@ -49,14 +49,20 @@ const handleSubmit = async () => {
     });
     toast.success({
       title: "Success",
+      titleColor: "white",
       message: "Your Email was sent successfully.",
       position: "bottomRight",
+      messageColor: "white",
+      color: "#08CB00",
     });
   } catch (error) {
     toast.error({
       title: "Error",
+      titleColor: "white",
       message: "Something went wrong.",
       position: "bottomRight",
+      messageColor: "white",
+      color: "#DD0303",
     });
   } finally {
     disalbleBtn.value = false;

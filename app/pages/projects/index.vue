@@ -341,6 +341,13 @@
   </section>
 </template>
 
+<script setup>
+useHead({
+  title: "Projects - Ali Joshany",
+  link: [{ rel: "canonical", href: "https://joshany.ir/projects" }],
+});
+</script>
+
 <style lang="scss" scoped>
 .info {
   display: flex;

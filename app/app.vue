@@ -13,9 +13,13 @@ onMounted(() => {
   });
 });
 
+
 useHead({
   title: "Ali Joshany - Front-End Developer",
   titleTemplate: "%s - Ali Joshany",
+  link: [
+    { rel: 'canonical', href: 'https://joshany.ir/' }
+  ],
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1.0" },

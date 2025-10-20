@@ -5,9 +5,9 @@
     >
       <div class="intro__content">
         <p class="font-[600] text-[1.9rem]">Hi i am</p>
-        <p class="text-[--color-orange-500] text-[2.5rem] font-[600]">
+        <h1 class="text-[--color-orange-500] text-[2.5rem] font-[600]">
           Ali Joshany
-        </p>
+        </h1>
         <div class="flex flex-col text-[5rem] lg:text-[9rem] font-[700]">
           <h2 class="mt-[-1.5rem] lg:mt-[-3rem]">Front End</h2>
           <h2 class="mt-[-3rem] lg:mt-[-5rem] self-end">Developer</h2>
@@ -17,7 +17,8 @@
           Passionate about creating responsive, user-friendly web interfaces
           using modern technologies such as Tailwind, Material UI, and SCSS.
         </p>
-        <NuxtLink to="/#contact"
+        <NuxtLink
+          to="/#contact"
           class="px-[4.5rem] py-[1rem] text-white bg-[--color-orange-500] rounded-[--radius-xsm] hover:bg-[--color-orange-200] transition-all"
         >
           Contact Me

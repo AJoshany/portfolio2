@@ -24,7 +24,7 @@ useHead({
     {
       name: "description",
       content:
-        "I'm Ali Joshany, a Front-End Developer passionate about crafting responsive, user-friendly web interfaces using Vue, Nuxt, React, and modern UI frameworks like Tailwind CSS.",
+        "I'm Ali Joshany, a Front-End Developer skilled in Vue, React, and modern UI design.",
     },
 
     // Open Graph

@@ -1,75 +1,47 @@
-# Nuxt Minimal Starter
+# 🌐 Personal Portfolio Website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern and responsive **Portfolio Website** built with **Vue.js**, **Nuxt**, and **Tailwind CSS**.  
+This project showcases my skills, projects, and experience as a Front-End Developer.  
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 🚀 Live Demo
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Site-blue?style=for-the-badge)](https://joshany.ir/)
+
+---
+
+## 🛠️ Built With
+
+- ⚡ **Vue 3** — Modern JavaScript framework for building UI  
+- 🌱 **Nuxt 4** — Framework for server-side rendering and SEO optimization  
+- 🎨 **Tailwind CSS** — Utility-first CSS framework for fast styling  
+- 🧭 **Netlify** — For deployment and hosting  
+
+---
+
+## 📂 Features
+
+- 💼 Fully responsive design  
+- 📱 Optimized for mobile and desktop  
+- 🚀 Fast page loads (Nuxt static site generation)  
+- 🧩 Smooth animations and transitions  
+- 📧 Contact form integration
+
+---
+
+## ⚙️ Installation & Setup
+
+If you want to run this project locally:
 
 ```bash
-# npm
+# Clone the repository
+git clone https://github.com/AJoshany/vue-portfolio.git
+
+# Navigate to the project folder
+cd vue-portfolio
+
+# Install dependencies
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# Run the development server
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

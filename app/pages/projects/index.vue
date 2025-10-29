@@ -294,11 +294,7 @@
         <div class="content flex flex-col gap-[2rem] pt-[1rem] md:pt-[4rem]">
           <h3 class="text-[3rem] font-[600]">Dashboard Admin</h3>
           <p>
-            The Financial Dashboard Project allows users to easily record and
-            manage their transactions. It automatically analyzes income and
-            expenses, providing clear insights through interactive charts and
-            summaries that help users understand their spending habits and make
-            smarter financial decisions.
+            A modern and responsive admin dashboard designed for efficient management and monitoring of data. Features include interactive charts, real-time statistics, user management, and customizable widgets to enhance productivity and provide clear insights into business operations. Built with a focus on usability, scalability, and clean design.
           </p>
           <div class="flex flex-col gap-[1rem] pt-[3rem]">
             <div class="info">

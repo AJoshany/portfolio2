@@ -44,22 +44,18 @@
 </template>
 
 <script setup lang="ts">
-interface ProjectInfo {
-  label: string;
-  value?: string;
-  url?: string;
-}
-
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  info: ProjectInfo[];
-}
-
 defineProps<{
-  project: Project;
+  project: {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+    info: {
+      label: string;
+      value?: string;
+      url?: string;
+    }[];
+  };
   reverse?: boolean;
 }>();
 </script>

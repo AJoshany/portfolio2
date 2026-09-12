@@ -3,7 +3,9 @@
     <div class="text-center md:max-w-[70%] flex flex-col gap-[1.5rem]">
       <h2 class="text-[5.2rem] font-[600]">My Projects</h2>
       <p class="text-[1.7rem]">
-        These are a few of the projects I’ve crafted along my development journey. To discover more of what I’ve been building, check out my resume.
+        These are a few of the projects I’ve crafted along my development
+        journey. To discover more of what I’ve been building, check out my
+        resume.
       </p>
     </div>
     <div
@@ -28,24 +30,25 @@
 
 <script setup>
 import partBankImg from "~/assets/img/part-bank.webp";
+import portfolioImg from "~/assets/img/portfolio.webp";
 import realEstateImg from "~/assets/img/real-estate.webp";
 const projects = [
   {
     title: "Personal Portfolio",
     category: "Nuxt Js",
-    id:'portfolio',
-    imgSrc: partBankImg,
+    id: "portfolio",
+    imgSrc: portfolioImg,
   },
   {
     title: "Part Bank",
     category: "Vue Js",
-    id:'part-bank',
+    id: "part-bank",
     imgSrc: partBankImg,
   },
   {
     title: "Real Estate",
     category: "Vue Js",
-    id:'real-estate',
+    id: "real-estate",
     imgSrc: realEstateImg,
   },
 ];

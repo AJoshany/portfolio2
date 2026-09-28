@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col">
-    <HeaderIntroSec class="pt-[2rem] lg:pt-[10rem]" />
-    <AboutMe id="about" class="pt-[7rem]" />
-    <SkillsViewer id="skills" class="pt-[7rem]" />
-    <ProjectsViewer class="pt-[7rem]" />
-    <ContactViewer id="contact" class="pt-[7rem]" />
+    <HeaderIntroSec v-reveal="'fade-right'" class="pt-[2rem] lg:pt-[10rem]" />
+    <AboutMe id="about" v-reveal="'fade-left'" class="pt-[7rem]" />
+    <SkillsViewer id="skills" v-reveal="'fade-right'" class="pt-[7rem]" />
+    <ProjectsViewer v-reveal="'fade-left'" class="pt-[7rem]" />
+    <ContactViewer id="contact" v-reveal="'zoom-in'" class="pt-[7rem]" />
   </div>
 </template>
 

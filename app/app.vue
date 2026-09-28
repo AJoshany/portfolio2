@@ -28,7 +28,7 @@ useHead({
     },
     { name: 'robots', content: 'index, follow' },
     { name: 'author', content: 'Ali Joshany' },
-    { name: 'theme-color', content: '#ff6300' },
+    { name: 'theme-color', content: '#0c0a09' },
 
     // Open Graph
     { property: 'og:site_name', content: 'Ali Joshany — Front-End Developer' },

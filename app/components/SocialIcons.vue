@@ -34,9 +34,10 @@ import GithubIcon from '~/assets/icons/github-icon.svg'
 
 <style>
 .icon {
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
   width: 2.5rem !important;
   height: 2.5rem !important;
+  color: var(--color-text-muted);
 }
 .icon:hover {
   color: var(--color-orange-500);

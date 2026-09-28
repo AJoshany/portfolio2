@@ -1,9 +1,11 @@
 <template>
-  <li class="logo-sec flex flex-col items-center gap-[2rem]">
+  <li
+    class="logo-sec flex flex-col items-center justify-center gap-[1.6rem] bg-raised border border-line rounded-[--radius-md] py-[3rem] px-[1.5rem] transition-all duration-200 hover:border-[--color-orange-500] hover:-translate-y-[0.4rem]"
+  >
     <svg class="icon1" aria-hidden="true">
       <use :xlink:href="`/sprite-skills.svg#${src}`"></use>
     </svg>
-    <span class="text-[2rem] font-[600]">{{ label }}</span>
+    <span class="text-[1.7rem] font-[600]">{{ label }}</span>
   </li>
 </template>
 
@@ -22,31 +24,28 @@ defineProps({
 
 <style lang="scss" scoped>
 .icon1 {
-  max-width: 120px;
-  max-height: 120px;
-
-  transition: filter 0.3s ease;
+  width: 7rem;
+  height: 7rem;
+  transition: filter 0.2s ease;
 }
-@media screen and (max-width: 768px) {
+
+@media (max-width: 768px) {
   .icon1 {
-    max-width: 80px;
-    max-height: 80px;
+    width: 5.5rem;
+    height: 5.5rem;
   }
 }
 
-.logo-sec {
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: translateY(-8px);
-
-    .icon1 {
-      filter: hue-rotate(100deg);
-    }
-  }
+.logo-sec:hover .icon1 {
+  filter: drop-shadow(0 0 12px var(--color-brand-glow));
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .logo-sec,
+  .icon1 {
+    transition: none;
+  }
+
   .logo-sec:hover {
     transform: none;
   }

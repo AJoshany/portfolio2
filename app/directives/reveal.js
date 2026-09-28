@@ -1,7 +1,7 @@
 // Shared reveal directive: registers elements with a single IntersectionObserver.
 // SSR renders elements fully visible (opacity 1) so nothing is hidden without JS;
 // the client plugin re-hides below-fold items just before hydration paint.
-export const revealPlugin = {
+export const reveal = {
   mounted(el, binding) {
     if (el.__revealCleanup) {
       el.__revealCleanup()

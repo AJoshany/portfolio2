@@ -7,6 +7,13 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: 'en' },
       link: [{ rel: 'icon', href: '/favicon.ico', sizes: '32x32' }],
+      script: [
+        {
+          // Apply the saved theme before first paint to avoid a flash.
+          innerHTML:
+            "(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.classList.add('light')}}catch(e){}})();",
+        },
+      ],
     },
   },
   modules: [

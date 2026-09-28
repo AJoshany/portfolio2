@@ -1,23 +1,27 @@
 <template>
-  <section class="flex flex-col items-center gap-[4rem]">
-    <div
-      class="skills__header text-center md:max-w-[70%] flex flex-col gap-[1.5rem]"
-    >
-      <h2 class="text-[5.2rem] font-[600]">Skills</h2>
-      <p class="text-[1.7rem]">
+  <section class="max-w-[120rem] mx-auto px-[3rem] flex flex-col items-center gap-[5rem]">
+    <div class="text-center flex flex-col gap-[1.5rem] max-w-[60rem]">
+      <p class="text-brand font-[600] text-[1.3rem] tracking-[0.2em] uppercase">
+        Skills
+      </p>
+      <h2 class="text-[4rem] md:text-[5.2rem] font-[600] leading-[1.1]">
+        Tools I work with
+      </h2>
+      <p class="text-[1.7rem] text-muted">
         The tools I use most, roughly in order of how often I reach for them.
         The full list — including WordPress work — is in my
         <a
           href="/Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-[--color-orange-500] underline hover:text-[--color-orange-300]"
-          >résumé</a
+          class="text-brand underline underline-offset-4 hover:text-[--color-orange-600]"
+          >resume</a
         >.
       </p>
     </div>
+
     <ul
-      class="flex justify-around md:justify-center gap-[6rem] gap-y-[3rem] md:gap-x-[15rem] md:gap-y-[8rem] flex-wrap content-center w-full"
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-[2rem] w-full max-w-[100rem]"
     >
       <SkillsSingle
         v-for="logo in logos"

@@ -1,17 +1,16 @@
 <template>
   <div class="w-full flex flex-col gap-[1rem]">
-    <p class="text-[1.9rem] font-[600] text-[--color-black-500]">{{ label }}</p>
+    <div class="flex justify-between items-baseline">
+      <span class="text-[1.7rem] font-[600]">{{ label }}</span>
+      <span class="text-[1.3rem] text-muted">{{ level }}%</span>
+    </div>
     <div
-      class="progress flex items-center w-full h-[1.2rem] relative rounded-[0.6rem] bg-[#EDECEC]"
+      class="flex items-center w-full h-[0.8rem] relative rounded-full bg-[--color-bg-raised] overflow-hidden border border-line"
       role="img"
       :aria-label="`${label}: ${level}%`"
     >
       <div
-        class="w-[3rem] h-[3rem] absolute rounded-full bg-[#EDECEC] border-[3px] border-[--color-orange-500] shadow-[0_4px_7px_rgba(0,0,0,0.25)]"
-        :style="{ left: `${level - 2}%` }"
-      ></div>
-      <div
-        class="h-full bg-[--color-orange-500] rounded-[0.6rem]"
+        class="h-full rounded-full bg-gradient-to-r from-[--color-orange-400] to-[--color-orange-500]"
         :style="{ width: `${level}%` }"
       ></div>
     </div>

@@ -1,262 +1,262 @@
-import coupleGrowthImage from "~/assets/img/coupleGrowth.webp";
-import flowDeskImage from "~/assets/img/flowdesk.webp";
-import portfolioImage from "~/assets/img/portfolio.webp";
-import partBankImage from "~/assets/img/part-bank.webp";
-import realEstateImage from "~/assets/img/real-estate.webp";
-import financeDashboardImage from "~/assets/img/finance-dashboard.webp";
-import bookingImage from "~/assets/img/booking.webp";
-import dashboardImage from "~/assets/img/dashboard.webp";
+import coupleGrowthImage from '~/assets/img/coupleGrowth.webp'
+import flowDeskImage from '~/assets/img/flowdesk.webp'
+import portfolioImage from '~/assets/img/portfolio.webp'
+import partBankImage from '~/assets/img/part-bank.webp'
+import realEstateImage from '~/assets/img/real-estate.webp'
+import financeDashboardImage from '~/assets/img/finance-dashboard.webp'
+import bookingImage from '~/assets/img/booking.webp'
+import dashboardImage from '~/assets/img/dashboard.webp'
 
 export const projects = [
   {
-    id: "coupleGrowth",
-    title: "CoupleGrowth",
+    id: 'coupleGrowth',
+    title: 'CoupleGrowth',
     description:
-      "A private space to track your goals, share your days, plan your dates and remember the moments that matter — for two people who are intentional about their relationship.",
+      'A private web app for couples to track shared goals, plan dates, and keep a joint journal. Built with Next.js and TypeScript; state kept in typed React context with localStorage persistence, no backend or accounts required.',
     image: coupleGrowthImage,
 
     info: [
       {
-        label: "Frontend",
-        value: "Next, React, TypeScript",
+        label: 'Frontend',
+        value: 'Next.js, React, TypeScript',
       },
       {
-        label: "Styling",
-        value: "CSS / Tailwind",
+        label: 'Styling',
+        value: 'CSS / Tailwind',
       },
       {
-        label: "Tools",
-        value: "pnpm, Git",
+        label: 'Tools',
+        value: 'pnpm, Git',
       },
       {
-        label: "Live Demo",
-        url: "https://couplegrowth.freebuff.app/",
+        label: 'Live Demo',
+        url: 'https://couplegrowth.freebuff.app/',
       },
       {
-        label: "GitHub",
-        url: "https://github.com/AJoshany/couple-growth-hub",
+        label: 'GitHub',
+        url: 'https://github.com/AJoshany/couple-growth-hub',
       },
     ],
   },
 
   {
-    id: "flowdesk",
-    title: "Flowdesk",
+    id: 'flowdesk',
+    title: 'Flowdesk',
     description:
-      " Full-Stack CRM Dashboard with Next.js, a CRM for small teams to manage customers, track deals, and collaborate with role-based access control.",
+      'A CRM dashboard for small teams: customer records, deal pipelines, and role-based access control. Next.js with TypeScript, route-level code splitting for the dashboard, and Tailwind for the UI layer.',
     image: flowDeskImage,
 
     info: [
       {
-        label: "Frontend",
-        value: "Next, React, TypeScript",
+        label: 'Frontend',
+        value: 'Next.js, React, TypeScript',
       },
       {
-        label: "Styling",
-        value: "CSS / Tailwind",
+        label: 'Styling',
+        value: 'CSS / Tailwind',
       },
       {
-        label: "Tools",
-        value: "pnpm, Git",
+        label: 'Tools',
+        value: 'pnpm, Git',
       },
       {
-        label: "Live Demo",
-        url: "https://flowdesk.freebuff.app/",
+        label: 'Live Demo',
+        url: 'https://flowdesk.freebuff.app/',
       },
       {
-        label: "GitHub",
-        url: "https://github.com/AJoshany/flowdesk",
+        label: 'GitHub',
+        url: 'https://github.com/AJoshany/flowdesk',
       },
     ],
   },
 
   {
-    id: "portfolio",
-    title: "Portfolio",
+    id: 'portfolio',
+    title: 'Portfolio',
     description:
-      "A personal portfolio website built with Nuxt.js, showcasing my projects, skills, and experience. It features a clean, responsive design and smooth navigation, designed to highlight my work effectively.",
+      'This website. Nuxt 4 with server-side rendering, hand-written SCSS and Tailwind, and a contact form backed by a server route. Built to score well on Core Web Vitals — no UI framework, no animation library.',
     image: portfolioImage,
 
     info: [
       {
-        label: "Frontend",
-        value: "Nuxt, Vue 3, AOS, Vite",
+        label: 'Frontend',
+        value: 'Nuxt 4, Vue 3, Vite',
       },
       {
-        label: "Styling",
-        value: "CSS / SCSS / Tailwind",
+        label: 'Styling',
+        value: 'CSS / SCSS / Tailwind',
       },
       {
-        label: "Tools",
-        value: "npm, Git",
+        label: 'Tools',
+        value: 'npm, Git',
       },
       {
-        label: "Live Demo",
-        url: "https://joshany.ir",
+        label: 'Live Demo',
+        url: 'https://joshany.ir',
       },
       {
-        label: "GitHub",
-        url: "https://github.com/AJoshany/portfolio2",
+        label: 'GitHub',
+        url: 'https://github.com/AJoshany/portfolio2',
       },
     ],
   },
 
   {
-    id: "part-bank",
-    title: "Part Bank",
+    id: 'part-bank',
+    title: 'Part Bank',
     description:
-      "Part Bank is a mini banking application that simulates some of the core features of a real-world online bank. It is a simplified project designed to demonstrate essential banking operations in a web environment. The project was developed collaboratively as a two-person team.",
+      'A two-person project simulating core online-banking flows: account creation, transfers, and transaction history. Vue 3 with Pinia for state, an Express API standing in for a real backend, and SCSS for styling.',
     image: partBankImage,
 
     info: [
       {
-        label: "Frontend",
-        value: "Vue 3, Pinia, Vue Router, Vite",
+        label: 'Frontend',
+        value: 'Vue 3, Pinia, Vue Router, Vite',
       },
       {
-        label: "Backend",
-        value: "Node.js, Express (for simulated API)",
+        label: 'Backend',
+        value: 'Node.js, Express (simulated API)',
       },
       {
-        label: "Styling",
-        value: "CSS / SCSS",
+        label: 'Styling',
+        value: 'CSS / SCSS',
       },
       {
-        label: "Tools",
-        value: "npm, Git",
+        label: 'Tools',
+        value: 'npm, Git',
       },
     ],
   },
 
   {
-    id: "real-estate",
-    title: "Real Estate",
+    id: 'real-estate',
+    title: 'Real Estate',
     description:
-      "This is a practice project for real estate listings, connected to Supabase, where each user's bookmarks and reserved listings are stored in the database. The project was developed collaboratively as a two-person team.",
+      'A property-listings app built as a two-person team. Vue 3 and Pinia on the front; Supabase for data, auth, and per-user bookmarks and reserved listings.',
     image: realEstateImage,
 
     info: [
       {
-        label: "Frontend",
-        value: "Vue 3, Pinia, Vue Router, Vite",
+        label: 'Frontend',
+        value: 'Vue 3, Pinia, Vue Router, Vite',
       },
       {
-        label: "Backend",
-        value: "Supabase (BaaS)",
+        label: 'Backend',
+        value: 'Supabase (BaaS)',
       },
       {
-        label: "Styling",
-        value: "CSS / SCSS",
+        label: 'Styling',
+        value: 'CSS / SCSS',
       },
       {
-        label: "Tools",
-        value: "npm, Git",
+        label: 'Tools',
+        value: 'npm, Git',
       },
       {
-        label: "Live Demo",
-        url: "https://real-state11.vercel.app/",
+        label: 'Live Demo',
+        url: 'https://real-state11.vercel.app/',
       },
       {
-        label: "GitHub",
-        url: "https://github.com/AJoshany/Real-state",
+        label: 'GitHub',
+        url: 'https://github.com/AJoshany/Real-state',
       },
     ],
   },
 
   {
-    id: "finance-dashboard",
-    title: "Finance Dashboard",
+    id: 'finance-dashboard',
+    title: 'Finance Dashboard',
     description:
-      "The Financial Dashboard Project allows users to easily record and manage their transactions. It automatically analyzes income and expenses, providing clear insights through interactive charts and summaries that help users understand their spending habits and make smarter financial decisions.",
+      'A personal-finance dashboard for recording transactions and seeing where money goes: income vs. expenses summarized with interactive charts. Vue 3 with Pinia, Supabase for storage.',
     image: financeDashboardImage,
 
     info: [
       {
-        label: "Frontend",
-        value: "Vue 3, Pinia, Vue Router, Vite",
+        label: 'Frontend',
+        value: 'Vue 3, Pinia, Vue Router, Vite',
       },
       {
-        label: "Backend",
-        value: "Supabase (BaaS)",
+        label: 'Backend',
+        value: 'Supabase (BaaS)',
       },
       {
-        label: "Styling",
-        value: "CSS / SCSS",
+        label: 'Styling',
+        value: 'CSS / SCSS',
       },
       {
-        label: "Tools",
-        value: "npm, Git",
+        label: 'Tools',
+        value: 'npm, Git',
       },
       {
-        label: "Live Demo",
-        url: "https://finance-dashboard-joshany.vercel.app/",
+        label: 'Live Demo',
+        url: 'https://finance-dashboard-joshany.vercel.app/',
       },
       {
-        label: "GitHub",
-        url: "https://github.com/AJoshany/FinanceDashboard",
+        label: 'GitHub',
+        url: 'https://github.com/AJoshany/FinanceDashboard',
       },
     ],
   },
 
   {
-    id: "booking",
-    title: "Booking App",
+    id: 'booking',
+    title: 'Booking App',
     description:
-      "A simple appointment booking website for doctors, allowing patients to schedule and manage their appointments easily. Built with a focus on clean design and user-friendly navigation.",
+      'An appointment-booking site for doctors’ offices: patients pick a doctor, date, and time slot, then manage upcoming appointments. Vue 3 with Pinia for booking state.',
     image: bookingImage,
 
     info: [
       {
-        label: "Frontend",
-        value: "Vue 3, Pinia, Vue Router, Vite",
+        label: 'Frontend',
+        value: 'Vue 3, Pinia, Vue Router, Vite',
       },
       {
-        label: "Styling",
-        value: "CSS",
+        label: 'Styling',
+        value: 'CSS',
       },
       {
-        label: "Tools",
-        value: "npm, Git",
+        label: 'Tools',
+        value: 'npm, Git',
       },
       {
-        label: "Live Demo",
-        url: "https://booking-app-joshany.vercel.app/",
+        label: 'Live Demo',
+        url: 'https://booking-app-joshany.vercel.app/',
       },
       {
-        label: "GitHub",
-        url: "https://github.com/AJoshany/Booking-App",
+        label: 'GitHub',
+        url: 'https://github.com/AJoshany/Booking-App',
       },
     ],
   },
 
   {
-    id: "dashboard",
-    title: "Dashboard Admin",
+    id: 'dashboard',
+    title: 'Dashboard Admin',
     description:
-      "A modern and responsive admin dashboard designed for efficient management and monitoring of data. Features include interactive charts, real-time statistics, user management, and customizable widgets to enhance productivity and provide clear insights into business operations. Built with a focus on usability, scalability, and clean design.",
+      'An admin dashboard with interactive charts, live stats, user management, and configurable widgets. React with React Router and Recharts, styled with MUI.',
     image: dashboardImage,
 
     info: [
       {
-        label: "Frontend",
-        value: "React, React Router, Rechart, Vite",
+        label: 'Frontend',
+        value: 'React, React Router, Recharts, Vite',
       },
       {
-        label: "Styling",
-        value: "CSS / MUI",
+        label: 'Styling',
+        value: 'CSS / MUI',
       },
       {
-        label: "Tools",
-        value: "npm, Git",
+        label: 'Tools',
+        value: 'npm, Git',
       },
       {
-        label: "Live Demo",
-        url: "https://dashboard-admin-phi-rose.vercel.app/",
+        label: 'Live Demo',
+        url: 'https://dashboard-admin-phi-rose.vercel.app/',
       },
       {
-        label: "GitHub",
-        url: "https://github.com/AJoshany/Dashboard-Admin",
+        label: 'GitHub',
+        url: 'https://github.com/AJoshany/Dashboard-Admin',
       },
     ],
   },
-];
+]

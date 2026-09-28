@@ -1,10 +1,10 @@
 <template>
-  <div class="logo-sec flex flex-col items-center gap-[2rem]">
-    <svg class="icon1">
+  <li class="logo-sec flex flex-col items-center gap-[2rem]">
+    <svg class="icon1" aria-hidden="true">
       <use :xlink:href="`/sprite-skills.svg#${src}`"></use>
     </svg>
-    <p class="text-[2rem] font-[600]">{{ label }}</p>
-  </div>
+    <span class="text-[2rem] font-[600]">{{ label }}</span>
+  </li>
 </template>
 
 <script setup>
@@ -17,7 +17,7 @@ defineProps({
     type: String,
     required: true,
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
@@ -25,7 +25,7 @@ defineProps({
   max-width: 120px;
   max-height: 120px;
 
-  transition: all 0.3s ease;
+  transition: filter 0.3s ease;
 }
 @media screen and (max-width: 768px) {
   .icon1 {
@@ -35,12 +35,20 @@ defineProps({
 }
 
 .logo-sec {
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
+
   &:hover {
     transform: translateY(-8px);
+
     .icon1 {
       filter: hue-rotate(100deg);
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-sec:hover {
+    transform: none;
   }
 }
 </style>

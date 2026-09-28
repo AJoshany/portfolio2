@@ -1,14 +1,17 @@
 <template>
-  <div
+  <article
+    :id="project.id"
     class="project flex flex-col md:flex-row md:gap-[4rem]"
     :class="{ 'md:flex-row-reverse': reverse }"
-    :id="project.id"
-    :data-aos="reverse ? 'fade-left' : 'fade-right'"
   >
     <img
       :src="project.image"
-      :alt="project.title"
-      class="max-w-[100%] md:max-w-[50%] rounded-[--radius-lg]"
+      :alt="`${project.title} — project screenshot`"
+      width="500"
+      height="313"
+      loading="lazy"
+      decoding="async"
+      class="max-w-[100%] md:max-w-[50%] rounded-[--radius-lg] w-full h-auto"
     />
 
     <div class="content flex flex-col gap-[2rem] pt-[1rem] md:pt-[4rem]">
@@ -20,44 +23,43 @@
         {{ project.description }}
       </p>
 
-      <div class="flex flex-col gap-[1rem] pt-[3rem]">
+      <dl class="flex flex-col gap-[1rem] pt-[3rem]">
         <div v-for="info in project.info" :key="info.label" class="info">
-          <p>- {{ info.label }}:</p>
-
-          <p v-if="info.value">
+          <dt class="font-[600]">{{ info.label }}</dt>
+          <dd v-if="info.value">
             {{ info.value }}
-          </p>
-
-          <NuxtLink
-            v-else-if="info.url"
-            :to="info.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-[--color-orange-500]"
-          >
-            view
-          </NuxtLink>
+          </dd>
+          <dd v-else-if="info.url">
+            <a
+              :href="info.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-[--color-orange-500] underline hover:text-[--color-orange-300]"
+            >
+              View
+            </a>
+          </dd>
         </div>
-      </div>
+      </dl>
     </div>
-  </div>
+  </article>
 </template>
 
 <script setup lang="ts">
 defineProps<{
   project: {
-    id: string;
-    title: string;
-    description: string;
-    image: string;
+    id: string
+    title: string
+    description: string
+    image: string
     info: {
-      label: string;
-      value?: string;
-      url?: string;
-    }[];
-  };
-  reverse?: boolean;
-}>();
+      label: string
+      value?: string
+      url?: string
+    }[]
+  }
+  reverse?: boolean
+}>()
 </script>
 
 <style scoped lang="scss">
@@ -66,9 +68,9 @@ defineProps<{
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-}
 
-.info p:nth-child(1) {
-  font-weight: 600;
+  dt::after {
+    content: ':';
+  }
 }
 </style>

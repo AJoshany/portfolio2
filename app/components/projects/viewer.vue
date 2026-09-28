@@ -1,55 +1,55 @@
 <template>
   <section class="flex flex-col items-center gap-[4rem]">
     <div class="text-center md:max-w-[70%] flex flex-col gap-[1.5rem]">
-      <h2 class="text-[5.2rem] font-[600]">My Projects</h2>
+      <h2 class="text-[5.2rem] font-[600]">Projects</h2>
       <p class="text-[1.7rem]">
-        These are a few of the projects I’ve crafted along my development
-        journey. To discover more of what I’ve been building, check out my
-        resume.
+        Recent work — with live demos and source code for each. The complete
+        list is on the
+        <NuxtLink
+          to="/projects"
+          class="text-[--color-orange-500] underline hover:text-[--color-orange-300]"
+          >projects page</NuxtLink
+        >.
       </p>
     </div>
-    <div
+    <ul
       class="w-full flex flex-col md:flex-row gap-[4rem] md:gap-[3.5rem] items-center justify-between"
     >
       <ProjectsSingle
-        v-for="(item, index) in projects"
-        :key="index"
+        v-for="item in featured"
+        :key="item.id"
         :title="item.title"
         :category="item.category"
         :img-src="item.imgSrc"
         :id="item.id"
       />
-    </div>
-    <NuxtLink
-      to="/projects"
-      class="text-[1.4rem] text-[--color-orange-500] self-end hover:text-[--color-orange-200] transition-all mt-[-2rem] md:mt-0"
-      >Show more...</NuxtLink
-    >
+    </ul>
   </section>
 </template>
 
 <script setup>
-import partBankImg from "~/assets/img/part-bank.webp";
-import portfolioImg from "~/assets/img/portfolio.webp";
-import realEstateImg from "~/assets/img/real-estate.webp";
-const projects = [
+import partBankImg from '~/assets/img/part-bank.webp'
+import portfolioImg from '~/assets/img/portfolio.webp'
+import realEstateImg from '~/assets/img/real-estate.webp'
+
+const featured = [
   {
-    title: "Personal Portfolio",
-    category: "Nuxt Js",
-    id: "portfolio",
-    imgSrc: portfolioImg,
-  },
-  {
-    title: "Part Bank",
-    category: "Vue Js",
-    id: "part-bank",
+    title: 'Part Bank',
+    category: 'Vue 3',
+    id: 'part-bank',
     imgSrc: partBankImg,
   },
   {
-    title: "Real Estate",
-    category: "Vue Js",
-    id: "real-estate",
+    title: 'Portfolio',
+    category: 'Nuxt',
+    id: 'portfolio',
+    imgSrc: portfolioImg,
+  },
+  {
+    title: 'Real Estate',
+    category: 'Vue 3',
+    id: 'real-estate',
     imgSrc: realEstateImg,
   },
-];
+]
 </script>

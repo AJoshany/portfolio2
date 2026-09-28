@@ -1,13 +1,14 @@
 <template>
   <div class="w-full flex flex-col items-center justify-between min-h-[100vh]">
-  <div class="container px-[3rem] py-4 md:py-[4rem]">
-    <HeaderTopNavbar data-aos="none" />
-    <slot></slot>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <div class="container px-[3rem] py-4 md:py-[4rem]">
+      <HeaderTopNavbar />
+      <main id="main" class="w-full">
+        <slot></slot>
+      </main>
+    </div>
+    <FooterViewer class="mt-[7rem]" />
   </div>
-  <FooterViewer class="mt-[7rem]" data-aos="fade-up"/>
-  </div>
- 
-
 </template>
 
 <script setup lang="ts"></script>

@@ -5,36 +5,43 @@
     >
       <h2 class="text-[5.2rem] font-[600]">Skills</h2>
       <p class="text-[1.7rem]">
-        These are some of the tools in my developer’s toolbox. To see everything
-        I’ve been sharpening, take a look at my full resume.
+        The tools I use most, roughly in order of how often I reach for them.
+        The full list — including WordPress work — is in my
+        <a
+          href="/Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-[--color-orange-500] underline hover:text-[--color-orange-300]"
+          >résumé</a
+        >.
       </p>
     </div>
-    <div
+    <ul
       class="flex justify-around md:justify-center gap-[6rem] gap-y-[3rem] md:gap-x-[15rem] md:gap-y-[8rem] flex-wrap content-center w-full"
     >
-      <skills-single
-        v-for="(logo, index) in logos"
-        :key="index"
+      <SkillsSingle
+        v-for="logo in logos"
+        :key="logo.src"
         :label="logo.label"
         :src="logo.src"
       />
-    </div>
+    </ul>
   </section>
 </template>
 
 <script setup>
 const logos = [
-  { label: "Vue Js", src: "Vue_logo" },
-  { label: "Nuxt Js", src: "Nuxt_logo" },
-  { label: "React Js", src: "React_logo" },
-  { label: "Javascript", src: "Javascript_logo" },
-  { label: "HTML", src: "HTML5_logo" },
-  { label: "CSS", src: "CSS3_logo" },
-  { label: "Tailwind", src: "Tailwind_logo" },
-  { label: "Bootstrap", src: "Bootstrap_logo" },
-  { label: "Git", src: "Git_logo" },
-  { label: "Wordpress", src: "WordPress_logo" },
-];
+  { label: 'Vue', src: 'Vue_logo' },
+  { label: 'Nuxt', src: 'Nuxt_logo' },
+  { label: 'React', src: 'React_logo' },
+  { label: 'JavaScript', src: 'Javascript_logo' },
+  { label: 'HTML', src: 'HTML5_logo' },
+  { label: 'CSS', src: 'CSS3_logo' },
+  { label: 'Tailwind', src: 'Tailwind_logo' },
+  { label: 'Bootstrap', src: 'Bootstrap_logo' },
+  { label: 'Git', src: 'Git_logo' },
+  { label: 'WordPress', src: 'WordPress_logo' },
+]
 </script>
 
 <style></style>

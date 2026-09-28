@@ -9,34 +9,40 @@
         Ali Joshany
       </p>
       <nav
-        class="flex items-center flex-col md:flex-row gap:[1rem] md:gap-[1.2rem] text-[--color-black-500]"
+        aria-label="Footer navigation"
+        class="flex items-center flex-col md:flex-row gap-[1rem] md:gap-[1.2rem] text-[--color-black-500]"
       >
-        <nuxt-link
-          v-for="(item, index) in navItemList"
-          :to="item.route"
-          :key="index"
-          class="px-[1rem] py-[0.8rem] cursor-pointer hover:text-[--color-orange-500] transition-all duration-300"
+        <ul
+          class="flex items-center flex-col md:flex-row gap-[1rem] md:gap-[1.2rem]"
         >
-          <li>
-            {{ item.title }}
+          <li v-for="item in navItemList" :key="item.route">
+            <NuxtLink
+              :to="item.route"
+              class="px-[1rem] py-[0.8rem] hover:text-[--color-orange-500] transition-colors duration-300"
+            >
+              {{ item.title }}
+            </NuxtLink>
           </li>
-        </nuxt-link>
+        </ul>
       </nav>
       <SocialIcons />
     </div>
-    <div class="text-white bg-[--color-black-300] py-[2rem] text-[1.2rem] md:text-[1.7rem] w-full text-center">
-      © 2025 <span class="text-[--color-orange-500]">Ali Joshany</span> All
-      Rights Reserved , Inc.
+    <div
+      class="text-white bg-[--color-black-300] py-[2rem] text-[1.2rem] md:text-[1.7rem] w-full text-center"
+    >
+      © {{ year }} Ali Joshany. All rights reserved.
     </div>
   </footer>
 </template>
 
 <script setup>
 const navItemList = [
-  { title: "Home", route: "/" },
-  { title: "About Me", route: "/#about" },
-  { title: "Skills", route: "/#skills" },
-  { title: "Projects", route: "/projects" },
-  { title: "Contact", route: "/#contact" },
-];
+  { title: 'Home', route: '/' },
+  { title: 'About Me', route: '/#about' },
+  { title: 'Skills', route: '/#skills' },
+  { title: 'Projects', route: '/projects' },
+  { title: 'Contact', route: '/#contact' },
+]
+
+const year = new Date().getFullYear()
 </script>
